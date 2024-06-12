@@ -1,10 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      html,
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .img {
+        align-items: center;
+        text-align: center;
+        margin-top: 10%;
+      }
+      header {
+        background-color: #005fa3 ;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+        position: relative;
+      }
+
+      .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+      }
+      .main-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 20px;
+      }
+
+      .main-nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      .main-nav a:hover {
+        text-decoration: underline;
+      }
+
+      .header-content h1 {
+        font-size: 2.5em;
+        margin: 0 0 20px;
+      }
+
+      .header-content p {
+        font-size: 1.2em;
+        margin: 0 0 20px;
+      }
         html, body {
             height: 100%;
             margin: 0;
@@ -27,11 +84,26 @@
             color: white;
         }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Sobre los Manatíes</a></li>
+            <li><a href="#habitat">Hábitat</a></li>
+            <li><a href="#conservation">Conservación</a></li>
+            <li><a href="#gallery">Galería</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <div class="img">
-        <img src="manatí.png" alt="Manatí">
+      <img src="manatí.png" alt="Manatí" />
     </div>
+  </body>
     <div class="footer">
         &copy; 2024. Todos los derechos reservados. Lian-Karla.
     </div>
